@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --spacing-content: clamp(16px, 5vw, 64px);
+
+  --color-purple-100: #f1eeff;
+  --color-purple-400: #a89fce;
+  --color-purple-700: #7366ab;
+  --color-red-400: #ff6c5a;
+
+  --shadow-chat-msg: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+@utility bg-gradient-brand {
+  @apply bg-linear-to-r from-red-400 to-purple-400;
+}
+
+@utility bg-gradient-brand_flip {
+  @apply bg-linear-to-r from-purple-400 to-red-400;
+}
+
+@utility content {
+  @apply px-content mx-auto max-w-5xl;
+}
+
+.nav-btn.active {
+  @apply bg-purple-100 font-bold;
+}
