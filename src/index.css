@@ -7,8 +7,6 @@
   --color-purple-400: #a89fce;
   --color-purple-700: #7366ab;
   --color-red-400: #ff6c5a;
-
-  --shadow-chat-msg: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 @utility bg-gradient-brand {

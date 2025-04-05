@@ -17,10 +17,9 @@ export const ChatMessageListItem: FC<Props> = ({ msg, fromMe }) => {
     >
       <div
         className={cx(
-          'shadow-chat-msg max-w-80 rounded-xl px-4 py-3 md:max-w-96',
-          {
-            'bg-purple-100': fromMe,
-          },
+          'max-w-80 rounded-xl px-4 py-3 md:max-w-96',
+          { 'bg-purple-100': fromMe },
+          { 'inset-ring inset-ring-neutral-100': !fromMe },
         )}
       >
         <p>{msg.payload}</p>
