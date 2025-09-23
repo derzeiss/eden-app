@@ -24,3 +24,12 @@
 .nav-btn.active {
   @apply bg-purple-100 font-bold;
 }
+
+.checkbox:before {
+  content: '';
+  @apply absolute top-0 left-0 h-6 w-6 rounded-sm inset-ring-2 inset-ring-neutral-300;
+}
+
+.checkbox:has(input[type='checkbox']:checked):before {
+  @apply bg-purple-700 inset-ring-purple-700;
+}
